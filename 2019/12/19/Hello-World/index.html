@@ -14,9 +14,9 @@
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="BomaoWolf" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
     <link rel="stylesheet" href="/css/diaspora.css">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({
               google_ad_client: "ca-pub-8691406134231910",
@@ -34,16 +34,13 @@
     <div id="single">
     <div id="top" style="display: block;">
     <div class="bar" style="width: 0;"></div>
-    <a class="icon-home image-icon" href="javascript:;" target="_blank" rel="noopener" data-url="bomaowolf.github.io"></a>
-    <div title="播放/暂停" class="icon-play"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" target="_blank" rel="noopener" data-url="bomaowolf.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
     <h3 class="subtitle">Hello World</h3>
     <div class="social">
-        <!--<div class="like-icon">-->
-            <!--<a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
-        <!--</div>-->
         <div>
             <div class="share">
-                <a title="获取二维码" class="icon-scan" href="javascript:;" target="_blank" rel="noopener"></a>
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;" target="_blank" rel="noopener"></a>
             </div>
             <div id="qr"></div>
         </div>
@@ -65,7 +62,7 @@
         <div class="content markdown">
             <p>欢迎来到波茂的个人博客！<br>本来一年前就有室友用搭出了他自己的个人博客，当时我就准备自己也搭一个，可是因为(<del>比较懒</del>)学业繁重，一直拖到了这个学期。几周前在加入我们学校的信息中心的时候，看到报名表上有“是否搭建过个人网站这一项”，就心想不如搭出来一个再填表，于是这个网站就这么诞生啦（<em>撒花</em>）<br>既然是个个人博客，我就准备在这里po一些日常和学习或者技术上的笔记，如果感兴趣的话请收藏以防走失<br>此外，因为我的这个网站是用了Hexo中现成的主题，所以有一些返回主页面的小bug(左上角)，我还在努力修改，请见谅（<em>土下座</em>）。顺便一说，左上角的音乐播放按钮可以使用，用这个安利自己喜欢的音乐倒是还挺方便的2333</p>
 <hr>
-<p>感谢此主题作者<a href="https://github.com/LoeiFy/Diaspora" target="_blank" rel="noopener">https://github.com/LoeiFy/Diaspora</a><br>文章封面和博客图片均会使用我自己的图片，引用他人图片时会特别标注，请勿盗用，谢谢！<br>此文章封面作者：Ogre <a href="https://bcy.net/u/263652" target="_blank" rel="noopener">https://bcy.net/u/263652</a></p>
+<p>感谢此主题作者<a href="https://github.com/LoeiFy/Diaspora" target="_blank" rel="noopener">https://github.com/LoeiFy/Diaspora</a><br>文章封面和博客图片均会使用我自己的图片，引用他人图片时会特别标注，请勿盗用，谢谢！</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
@@ -75,6 +72,7 @@
         </div>
         
     <div id='gitalk-container' class="comment link"
+		data-enable='false'
         data-ae='false'
         data-ci=''
         data-cs=''
@@ -93,9 +91,10 @@
     </div>
 </div>
 </body>
-<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
 <script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
 <script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
 <script src="/js/diaspora.js"></script>
 <link rel="stylesheet" href="/photoswipe/photoswipe.css">
 <link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
@@ -149,6 +148,27 @@
         </div>
     </div>
 </div>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
